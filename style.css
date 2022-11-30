@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Joan', serif;
+}
+
+a{
+    text-decoration: none;
+    color: #adadad;
+}
+
+.btn{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #cd8c38;
+    border-radius: 2rem;
+    color: #1e1f26;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #92601f;
+}
+
+.btn-1{
+    width: 100%;
+    text-align: center;
+}
+
+body{
+    background-color: #1e1f26;
+    display: grid;
+    grid-template-columns: 1000px;
+    justify-content: space-evenly;
+}
+
+/* top bar */
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+.left-content, .right-content{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    margin-right: 3rem;
+    color: #cd8c38;
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+}
+
+.navigation li{
+    margin-right: 1rem; 
+}
+
+.navigation li a:hover{
+    color: #cd8c38;
+}
+
+.unklab-img-box{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.fik-img-box{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* main container */
+.main-container{
+    color: #adadad;
+    display: inline-table;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    
+}
+
+.bookbar{
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bookbar-groups{
+    margin-bottom: 1rem;
+}
+
+.sg-title{
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+/* movies container */
+.upcoming-img-box{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.upcoming-title{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #cd8c38;
+    background-color: #1e1f26;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #cd8c38;
+    font-size: 140%;
+    font-weight: 200;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.link{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #cd8c38;
+    border-radius: 2rem;
+    color: #1e1f26;
+    transition: .3s;
+}
+
+.link:hover{
+    color: #1e1f26;
+    background-color: #cd8c38;
+}
+
+#slideshow{
+    text-align: center;
+    overflow: hidden;
+    height: 450px;
+    width: 1000px;
+    margin: 0 auto;
+}
+  
+.slide-wrapper{
+    width: 5000px;
+    -webkit-animation: slide 18s ease infinite;
+}
+  
+.slide{
+    float: left;
+    height: 510px;
+    width: 1000px;
+}
+  
+.slide-number{
+    color: #000;
+    text-align: center;
+    font-size: 1.1em;
+}
+  
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -1000px;}
+    50% {margin-left: -1000px;}
+    60% {margin-left: -2000px;}
+    70% {margin-left: -2000px;}
+    80% {margin-left: -3000px;}
+    90% {margin-left: -3000px;}
+}
+
+/* current movies */
+.nowshow-in-cinemas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2d2e37;
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.current-movies{
+    display: inline-table;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1,5rem;
+}
+
+.current-movie{
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.cm-img-box{
+    position: relative;
+    height: 393px;
+    width: 298px;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+
+}
+
+.movie-title{
+    color: #fff;
+    margin-bottom: .2rem;
+    font-size: 138%;
+}
+
+.booking{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.price{
+    color: #cd8c38;
+    margin-right: 1rem;
+}
+
+/* snacks and drinks container */
+.snack-container{
+    margin-top: 4rem;
+}
+.snacksdrinks-img-box{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.snacksdrinks-title{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #cd8c38;
+    background-color: #1e1f26;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #cd8c38;
+    font-size: 140%;
+    font-weight: 200;
+}
+
+.snacks-in-cinemas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2d2e37;
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.snacks-container{
+    padding-bottom: 2rem;
+}
+
+.current-snacks{
+    display: inline-table;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1,5rem;
+}
+
+.current-snack{
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.cs-img-box{
+    position: relative;
+    height: 393px;
+    width: 298px;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.snack-title{
+    color: #fff;
+    margin-bottom: .2rem;
+    font-size: 138%;
+}
+
+.drink-container{
+    margin-top: 2rem;
+}
+
+.drinks-in-cinemas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2d2e37;
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.drinks-container{
+    padding-bottom: 2rem;
+}
+
+.current-drinks{
+    display: inline-table;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1,5rem;
+}
+
+.current-drink{
+    background: linear-gradient(45deg, rgba(255, 255, 255, .05), rgba(205, 140, 56, .15));
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.cd-img-box{
+    position: relative;
+    height: 393px;
+    width: 298px;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.drink-title{
+    color: #fff;
+    margin-bottom: .2rem;
+    font-size: 138%;
+}
+
+/* about us */
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2d2e37;
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.current-groups{
+    display: inline-table;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1,5rem;
+}
+
+.current-group{
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.cg-img-box{
+    position: relative;
+    height: 293px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    width: 298px;
+    border-radius: 50%;
+}
+
+.member-group{
+    color: #fff;
+    margin-bottom: .2rem;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+/* purchase and confirm order */
+.confirm-order{
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #cd8c38;
+}
+
+label{
+    margin-left: .5rem;
+    font-size: 120%;
+    color: #cd8c38;
+}
+
+
+.purchase-success{
+    margin-right: 3rem;
+    color: #cd8c38;
+}
